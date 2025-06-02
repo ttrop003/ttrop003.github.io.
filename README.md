@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ถึงคนที่ฉันรัก</title>
+  <link rel="stylesheet" href="sylet.css">
   <style>
     body {
       margin: 0;
@@ -15,6 +16,7 @@
       justify-content: center;
       height: 100vh;
     }
+
     .heart {
       width: 100px;
       height: 90px;
@@ -23,6 +25,7 @@
       transform: rotate(-45deg);
       animation: pulse 1s infinite;
     }
+
     .heart::before,
     .heart::after {
       content: "";
@@ -32,19 +35,23 @@
       background: red;
       border-radius: 50%;
     }
+
     .heart::before {
       top: -50px;
       left: 0;
     }
+
     .heart::after {
       left: 50px;
       top: 0;
     }
+
     @keyframes pulse {
       0% { transform: scale(1) rotate(-45deg); }
       50% { transform: scale(1.1) rotate(-45deg); }
       100% { transform: scale(1) rotate(-45deg); }
     }
+
     .floating-heart {
       position: absolute;
       width: 15px;
@@ -55,6 +62,7 @@
       border-radius: 50% 50% 0 0;
       opacity: 0.8;
     }
+
     @keyframes float {
       0% {
         bottom: 0;
@@ -65,6 +73,7 @@
         opacity: 0;
       }
     }
+
     h1 {
       color: #d1003f;
       margin-top: 20px;
@@ -73,8 +82,8 @@
   </style>
 </head>
 <body>
+
   <div class="heart"></div>
-  <h1>ฉันรักเธอในทุกฐานะ 💌</h1>
 
   <script>
     // สร้างหัวใจลอย
@@ -92,5 +101,13 @@
       }, 4000);
     }, 300);
   </script>
+   <h1 id="demo">มีไรบอก 💌</h1>
+    <button class="t" type="button" onclick="myFunction();">กดตรงนี้</button>
+    <script>
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "เป็นแฟนกันมั้ย 💌"
+        }
+    </script>
 </body>
 </html>
