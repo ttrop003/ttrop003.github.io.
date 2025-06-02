@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ถึงคนที่ฉันรัก</title>
+  <link rel="stylesheet" href="sylet.css">
   <style>
     body {
       margin: 0;
@@ -83,7 +84,6 @@
 <body>
 
   <div class="heart"></div>
-  <h1>ฉันรักเธอในทุกฐานะ 💌</h1>
 
   <script>
     // สร้างหัวใจลอย
@@ -101,5 +101,13 @@
       }, 4000);
     }, 300);
   </script>
+   <h1 id="demo">มีไรบอก 💌</h1>
+    <button class="t" type="button" onclick="myFunction();">กดตรงนี้</button>
+    <script>
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "เป็นแฟนกันมั้ย 💌"
+        }
+    </script>
 </body>
 </html>
