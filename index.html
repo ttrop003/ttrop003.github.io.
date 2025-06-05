@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>ถึงคนที่ฉันรัก</title>
+  <title>ถึงคุณ</title>
   <link rel="stylesheet" href="sylet.css">
   <style>
     body {
