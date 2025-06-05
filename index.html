@@ -101,13 +101,7 @@
       }, 4000);
     }, 300);
   </script>
-   <h1 id="demo">มีไรบอก 💌</h1>
-    <button class="t" type="button" onclick="myFunction();">กดตรงนี้</button>
-    <script>
-
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "เป็นแฟนกันมั้ย 💌"
-        }
+   <h1>เป็นแฟนกันมั้ยย 💌</h1>
     </script>
 </body>
 </html>
